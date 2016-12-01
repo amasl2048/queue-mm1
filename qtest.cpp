@@ -12,8 +12,6 @@ using namespace std;
 #include "arg.h"
 #include "qtest.h"
 
-#define DDD 0
-
 int main(int argc, char **argv) {
 
 // ввод данных из командной строки
@@ -81,13 +79,10 @@ out_data();
 return 0;
 }
 
-void new_order()
-{
+void new_order() {
   in++;
-#ifdef DDD
   //new_order_log.precision(16); 
   //new_order_log << atime << " " << c_time << "\n";
-#endif
 }
 
 void server_in() {
@@ -105,10 +100,9 @@ void server_in() {
 
   c_time  = atime + r; // время окончания обслуживания
   
-#ifdef DDD
   //c_time_log.precision(16); 
   //c_time_log << c_time << "\n";
-#endif
+
 }
 
 void packet_drop() {
@@ -152,10 +146,9 @@ void new_atime() {
   
   atime = atime + r; // new arrival time
   
-#ifdef DDD
   //atime_log.precision(16); 
   //atime_log << atime << "\n";
-#endif
+
 }
 
 void service() {

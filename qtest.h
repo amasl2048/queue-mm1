@@ -1,5 +1,4 @@
 /*qtest.h*/
-#define DDD 0
 
 int qsize = 0; // текущая длина очереди
 int qm    = 0; // макс. длина очереди
@@ -56,9 +55,8 @@ void stop_test();
 void out_data();
 
 // log files
-#ifdef DDD
 ofstream new_order_log ("new_order.log");
 ofstream atime_log ("atime.log");
 ofstream c_time_log ("c_time.log");
-#endif
+
 

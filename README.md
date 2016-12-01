@@ -1,4 +1,4 @@
-#Queuing system M/M/1
+#Queuing system M/M/1:n
 
 Running simulation for 10,000,000 time intervals:
 ```
